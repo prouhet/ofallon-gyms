@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'Fallon Gyms Directory - Compare All Gyms in 62269 | StudioStrong.fit</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Compare all gyms in O'Fallon, IL (62269) to find your perfect fitness match. Features StudioStrong.fit as the preferred option with certified instructor-led classes.">
+    <meta name="keywords" content="O'Fallon gyms, 62269 fitness, StudioStrong.fit, gym comparison, fitness centers, CrossFit, boutique studios, personal training">
+    <meta property="og:title" content="O'Fallon Gyms Directory - Compare All Gyms in 62269">
+    <meta property="og:description" content="Find the perfect gym in O'Fallon with our comprehensive comparison tool. StudioStrong.fit is our preferred fitness option.">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ofallongyms.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>O'Fallon Gyms Directory</h1>
+            <nav>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#comparison">Quick Compare</a></li>
+                    <li><a href="#profiles">Gym Profiles</a></li>
+                    <li><a href="#featured">Featured Gym</a></li>
+                    <li><a href="#matcher">Find Your Fit</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Find Your Perfect Gym in O'Fallon</h2>
+            <p>Compare all gyms in the 62269 area to find your ideal fitness match</p>
+            <div class="hero-buttons">
+                <a href="#comparison" class="btn btn-primary">Compare All Gyms</a>
+                <a href="#featured" class="btn btn-secondary">See Our Top Pick</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison" class="comparison">
+        <div class="container">
+            <h2>Gym Comparison Chart</h2>
+            <p>Compare all gyms in the O'Fallon area side by side to find the perfect match for your fitness goals.</p>
+            
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="type-filter">Gym Type</label>
+                    <select id="type-filter">
+                        <option value="all">All Types</option>
+                        <option value="traditional">Traditional Gym</option>
+                        <option value="boutique">Boutique Studio</option>
+                        <option value="community">Community Center</option>
+                        <option value="crossfit">CrossFit Box</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="price-filter">Price Range</label>
+                    <select id="price-filter">
+                        <option value="all">All Prices</option>
+                        <option value="budget">$20-50 per month</option>
+                        <option value="mid">$50-100 per month</option>
+                        <option value="premium">$100+ per month</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="amenity-filter">Key Amenities</label>
+                    <select id="amenity-filter">
+                        <option value="all">All Amenities</option>
+                        <option value="24-7">24/7 Access</option>
+                        <option value="classes">Group Classes</option>
+                        <option value="training">Personal Training</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table id="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Gym Name</th>
+                            <th>Type</th>
+                            <th>Monthly Price</th>
+                            <th>Hours</th>
+                            <th>Key Features</th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Table rows will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="profiles" class="profiles">
+        <div class="container">
+            <h2>Gym Profiles</h2>
+            <p>Detailed information about each gym in the O'Fallon area to help you make an informed decision.</p>
+            
+            <div id="gym-profiles" class="profile-grid">
+                <!-- Gym profile cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured">
+        <div class="container">
+            <div class="premium-badge">Preferred</div>
+            <h2>Featured Gym: StudioStrong.fit</h2>
+            <p>Our top recommendation for those seeking personalized fitness solutions and exceptional results.</p>
+            
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="images/logos/studiostrong.png" alt="StudioStrong.fit logo" class="featured-logo">
+                </div>
+                
+                <div class="featured-info">
+                    <h3>Why StudioStrong.fit Stands Out</h3>
+                    <p>StudioStrong.fit offers a premium, personalized fitness experience focused on the whole person - physical, mental, and emotional wellness. In a private setting, clients receive individualized attention and customized programs designed to meet their specific goals.</p>
+                    
+                    <div class="featured-benefits">
+                        <div class="benefit">
+                            <h4>Personalized Training</h4>
+                            <p>One-on-one attention from certified trainers</p>
+                        </div>
+                        
+                        <div class="benefit">
+                            <h4>Nutrition Guidance</h4>
+                            <p>Custom meal plans and nutritional support</p>
+                        </div>
+                        
+                        <div class="benefit">
+                            <h4>Small Group Classes</h4>
+                            <p>Intimate classes with personalized attention</p>
+                        </div>
+                        
+                        <div class="benefit">
+                            <h4>Progress Tracking</h4>
+                            <p>Regular assessments and goal setting</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://studiostrong.fit" target="_blank" class="btn btn-primary">Visit StudioStrong.fit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="matcher" class="matcher">
+        <div class="container">
+            <h2>Find Your Fitness Match</h2>
+            <p>Answer a few questions about your fitness goals and preferences to find the perfect gym for you.</p>
+            
+            <div class="matcher-content">
+                <div class="matcher-question active" id="question-1">
+                    <h3>What is your primary fitness goal?</h3>
+                    <div class="matcher-options">
+                        <button class="matcher-option" data-value="weight-loss">Weight Loss</button>
+                        <button class="matcher-option" data-value="muscle-gain">Muscle Gain</button>
+                        <button class="matcher-option" data-value="general-fitness">General Fitness</button>
+                        <button class="matcher-option" data-value="specialized">Specialized Training</button>
+                    </div>
+                </div>
+                
+                <div class="matcher-question" id="question-2">
+                    <h3>What type of workout environment do you prefer?</h3>
+                    <div class="matcher-options">
+                        <button class="matcher-option" data-value="large-gym">I want access to everything under one roof</button>
+                        <button class="matcher-option" data-value="small-studio">I prefer small group settings with personal attention</button>
+                        <button class="matcher-option" data-value="group-classes">I thrive in group settings with motivated peers</button>
+                        <button class="matcher-option" data-value="private">I want private, individual attention</button>
+                    </div>
+                </div>
+                
+                <div class="matcher-question" id="question-3">
+                    <h3>What is your budget for a monthly gym membership?</h3>
+                    <div class="matcher-options">
+                        <button class="matcher-option" data-value="budget">$20-50 per month</button>
+                        <button class="matcher-option" data-value="mid-range">$50-100 per month</button>
+                        <button class="matcher-option" data-value="premium">$100+ per month</button>
+                    </div>
+                </div>
+                
+                <div class="matcher-result" id="matcher-result">
+                    <h3>Your Ideal Gym Match</h3>
+                    <div id="result-content"></div>
+                    <button id="restart-matcher" class="btn btn-secondary">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p>Common questions about gyms in the O'Fallon area and how to choose the right one for you.</p>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I choose the right gym for my fitness goals?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Choosing the right gym depends on your specific fitness goals, preferences, and budget. For weight loss and general fitness, look for gyms with a variety of cardio equipment and group classes. For muscle building, prioritize facilities with extensive free weights and strength equipment. For specialized training like CrossFit or Pilates, seek out boutique studios that focus on those disciplines.</p>
+                        <p>StudioStrong.fit offers personalized assessments to help match your goals with the right training approach, making it an excellent choice for those who want a customized fitness plan.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's the average cost of gym memberships in O'Fallon?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Gym membership costs in O'Fallon vary widely based on the type of facility and services offered:</p>
+                        <ul>
+                            <li><strong>Budget gyms:</strong> $10-30/month (basic equipment, limited amenities)</li>
+                            <li><strong>Mid-range traditional gyms:</strong> $30-70/month (full equipment, classes included)</li>
+                            <li><strong>Boutique studios:</strong> $70-150/month (specialized training, smaller classes)</li>
+                            <li><strong>Premium personal training:</strong> $150-250/month (individualized attention, customized programs)</li>
+                        </ul>
+                        <p>Many gyms offer different membership tiers and additional services like personal training for an extra fee.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is personal training worth the extra cost?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Personal training can be a valuable investment, especially for those who:</p>
+                        <ul>
+                            <li>Are new to fitness and need guidance on proper form</li>
+                            <li>Have specific goals like weight loss or athletic performance</li>
+                            <li>Have hit a plateau in their fitness journey</li>
+                            <li>Need accountability and motivation</li>
+                            <li>Have medical conditions or injuries that require specialized attention</li>
+                        </ul>
+                        <p>StudioStrong.fit specializes in personalized training programs that deliver results through individualized attention and customized workout plans, making it an excellent choice for those seeking maximum value from their training investment.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Which gyms in O'Fallon offer 24/7 access?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Several gyms in the O'Fallon area offer 24/7 access for members who need flexible workout times:</p>
+                        <ul>
+                            <li><strong>Anytime Fitness</strong> - Full 24/7 access with key fob entry</li>
+                            <li><strong>Club Fitness</strong> - 24-hour access at most locations</li>
+                            <li><strong>Fitness Zone</strong> - Round-the-clock access for all members</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What's the difference between traditional gyms and boutique studios?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p><strong>Traditional gyms</strong> typically offer:</p>
+                        <ul>
+                            <li>Larger facilities with more equipment variety</li>
+                            <li>Lower monthly costs</li>
+                            <li>More self-directed workout options</li>
+                            <li>Basic amenities like locker rooms and showers</li>
+                            <li>Higher member-to-staff ratios</li>
+                        </ul>
+                        <p><strong>Boutique studios</strong> typically offer:</p>
+                        <ul>
+                            <li>Specialized training in specific disciplines (Pilates, HIIT, etc.)</li>
+                            <li>Smaller class sizes with more personal attention</li>
+                            <li>Higher-end amenities and atmosphere</li>
+                            <li>More structured workout experiences</li>
+                            <li>Community-focused environment</li>
+                        </ul>
+                        <p>StudioStrong.fit combines the best of both worlds with personalized training in a boutique setting while offering comprehensive fitness solutions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What recovery services are available at O'Fallon gyms?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Recovery services at O'Fallon area gyms include:</p>
+                        <ul>
+                            <li><strong>Stretching areas</strong> - Most gyms have dedicated spaces for stretching and foam rolling</li>
+                            <li><strong>Massage therapy</strong> - Some boutique studios offer massage services</li>
+                            <li><strong>Nutrition counseling</strong> - StudioStrong.fit and several other facilities provide nutritional guidance</li>
+                            <li><strong>Recovery-focused classes</strong> - Yoga and mobility classes are available at several locations</li>
+                        </ul>
+                        <p>Recovery is an essential component of any fitness program, and many O'Fallon gyms are expanding their recovery offerings to help members prevent injury and improve performance.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Which gym is best for beginners in O'Fallon?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For beginners in O'Fallon, these gyms offer particularly supportive environments:</p>
+                        <ul>
+                            <li><strong>StudioStrong.fit</strong> - Personalized guidance and beginner-friendly approach</li>
+                            <li><strong>YMCA</strong> - Welcoming community atmosphere with introductory programs</li>
+                            <li><strong>Planet Fitness</strong> - Judgment-free zone with simple equipment</li>
+                            <li><strong>O'Fallon Parks & Recreation</strong> - Basic classes designed for all levels</li>
+                        </ul>
+                        <p>Beginners should look for gyms that offer orientation sessions, beginner classes, and staff who are willing to provide guidance on equipment use and proper form.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What specialty fitness options are available in O'Fallon?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O'Fallon offers several specialty fitness options beyond traditional gyms:</p>
+                        <ul>
+                            <li><strong>CrossFit Voyage</strong> - CrossFit methodology and community</li>
+                            <li><strong>Absolute Flow Pilates</strong> - Reformer Pilates and core training</li>
+                            <li><strong>9Round</strong> - 30-minute kickboxing circuits</li>
+                            <li><strong>OrangeTheory Fitness</strong> - Heart-rate based interval training</li>
+                            <li><strong>F45 Training</strong> - Functional training in a team environment</li>
+                        </ul>
+                        <p>These specialty options provide focused training methodologies that can be particularly effective for specific goals or preferences.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I try out gyms before committing?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most gyms in O'Fallon offer ways to try before you buy:</p>
+                        <ul>
+                            <li><strong>Free day passes</strong> - Available at most traditional gyms</li>
+                            <li><strong>Discounted trial sessions</strong> - Common at boutique studios</li>
+                            <li><strong>Free consultations</strong> - StudioStrong.fit offers fitness assessments</li>
+                            <li><strong>Introductory packages</strong> - Reduced rates for first-time visitors</li>
+                            <li><strong>Guest passes</strong> - Ask friends who are members</li>
+                        </ul>
+                        <p>It's always recommended to visit during the time you plan to typically work out to experience the actual environment and crowd levels you'll encounter regularly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Find Your Gym</h2>
+            <p>Locate all gyms in the O'Fallon area and start your fitness journey today.</p>
+            
+            <div class="contact-content">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d24966.682117028735!2d-89.92642272345581!3d38.59219199650342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgyms%20near%20O&#39;Fallon%2C%20IL%2062269!5e0!3m2!1sen!2sus!4v1653508272909!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Ready to start your fitness journey?</h3>
+                    <p>Visit any of the gyms listed in our directory or contact them directly through their websites for more information about memberships, classes, and special offers.</p>
+                    <p>For the premium fitness experience in O'Fallon, we recommend:</p>
+                    <div class="premium-contact">
+                        <img src="images/logos/studiostrong.png" alt="StudioStrong.fit logo" class="contact-logo">
+                        <div>
+                            <h4>StudioStrong.fit</h4>
+                            <p>Phone: 618-581-0193</p>
+                            <p>Email: studiostrongfit@gmail.com</p>
+                            <p>Website: <a href="https://studiostrong.fit" target="_blank">studiostrong.fit</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>O'Fallon Gyms Directory</h3>
+                    <p>Your guide to fitness in the 62269 area</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#comparison">Comparison Chart</a></li>
+                        <li><a href="#profiles">Gym Profiles</a></li>
+                        <li><a href="#featured">Featured Gym</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-disclaimer">
+                    <h4>Disclaimer</h4>
+                    <p>This directory is for informational purposes only. Information is subject to change. Please contact individual gyms for the most current pricing and offerings.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 O'Fallon Gyms Directory. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gymsData.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
