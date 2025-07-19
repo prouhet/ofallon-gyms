@@ -3,20 +3,818 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O'Fallon Gyms Directory - Compare All Gyms in 62269 | StudioStrong.fit</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Compare all gyms in O'Fallon, IL (62269) to find your perfect fitness match. Features StudioStrong.fit as the preferred option with certified instructor-led classes.">
-    <meta name="keywords" content="O'Fallon gyms, 62269 fitness, StudioStrong.fit, gym comparison, fitness centers, CrossFit, boutique studios, personal training">
-    <meta property="og:title" content="O'Fallon Gyms Directory - Compare All Gyms in 62269">
-    <meta property="og:description" content="Find the perfect gym in O'Fallon with our comprehensive comparison tool. StudioStrong.fit is our preferred fitness option.">
-    <meta property="og:type" content="website">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://ofallongyms.com/">
+    <title>Complete O'Fallon Gym Guide - Compare All 14+ Fitness Centers</title>
+    <meta name="description" content="Find the perfect gym in O'Fallon, IL. Compare all 14+ fitness centers with ratings, services, pricing, and reviews. StudioStrong.fit featured as top choice.">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles - Gym Energy Red/Orange Theme */
+        :root {
+            --primary-color: #e53e3e;
+            --secondary-color: #c53030;
+            --accent-color: #fc8181;
+            --light-color: #fef5f5;
+            --dark-color: #2d3748;
+            --gray-color: #718096;
+            --light-gray: #e2e8f0;
+            --premium-color: #f6ad55;
+            --success-color: #38a169;
+            --border-radius: 5px;
+            --box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #9b2c2c;
+            color: white;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: white;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: var(--dark-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--dark-color);
+            margin: 2px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Matcher Section */
+        .matcher {
+            background-color: var(--light-gray);
+        }
+
+        .matcher-content {
+            max-width: 700px;
+            margin: 40px auto 0;
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+        }
+
+        .matcher-question {
+            display: none;
+            padding: 30px;
+        }
+
+        .matcher-question.active {
+            display: block;
+        }
+
+        .matcher-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .matcher-option {
+            padding: 15px;
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .matcher-option:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .matcher-result {
+            display: none;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .matcher-result.active {
+            display: block;
+        }
+
+        #result-content {
+            margin: 20px 0;
+        }
+
+        /* Comparison Section */
+        .comparison {
+            background-color: white;
+        }
+
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .filter-group {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .filter-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--border-radius);
+            background-color: white;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        th {
+            background-color: var(--secondary-color);
+            color: white;
+            position: sticky;
+            top: 0px;
+            z-index: 100;
+            white-space: nowrap;
+            font-size: 0.9rem;
+            padding: 12px 15px;
+        }
+
+       tbody tr {
+            transition: var(--transition);
+        }
+
+        tbody tr:hover {
+            background-color: var(--light-gray);
+        }
+
+        .premium-row {
+            background-color: rgba(246, 173, 85, 0.1);
+        }
+
+        .premium-row:hover {
+            background-color: rgba(246, 173, 85, 0.2);
+        }
+
+        .gym-logo-small {
+            height: 30px;
+            width: 30px;
+            margin-right: 10px;
+            object-fit: contain;
+        }
+
+        .gym-name-cell {
+            vertical-align: middle;
+        }
+
+        .name-wrapper {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        td {
+            vertical-align: middle;
+        }
+
+        .star-rating {
+            color: var(--premium-color);
+        }
+
+        /* Profiles Section */
+        .profiles {
+            background-color: var(--light-gray);
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .profile-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .profile-header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .profile-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 15px;
+        }
+
+        .profile-title h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .profile-type {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+
+        .profile-body {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .profile-info {
+            margin-bottom: 15px;
+        }
+
+        .profile-info h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .profile-info p, .profile-info ul {
+            font-size: 0.9rem;
+            color: var(--gray-color);
+        }
+
+        .profile-info ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+
+        .profile-footer {
+            padding: 15px 20px;
+            background-color: var(--light-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .profile-rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-rating .star-rating {
+            margin-right: 5px;
+        }
+
+        .profile-link a {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .premium-card {
+            border: 2px solid var(--premium-color);
+        }
+
+        .premium-badge {
+            background-color: var(--premium-color);
+            color: var(--dark-color);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Featured Section */
+        .featured {
+            background-color: white;
+        }
+
+        .featured-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .featured-image {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .featured-logo {
+            max-width: 100%;
+            max-height: 300px;
+            object-fit: contain;
+        }
+
+        .featured-info {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .featured-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .benefit {
+            background-color: var(--light-gray);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+
+        .benefit:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--box-shadow);
+        }
+
+        .benefit h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: white;
+        }
+
+        .faq-list {
+            margin-top: 40px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .faq-question {
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-question h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            flex: 1;
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .faq-answer {
+            padding: 0 0 20px;
+            display: none;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-answer p {
+            margin-bottom: 15px;
+        }
+
+        .faq-answer ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--light-gray);
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            height: 450px;
+        }
+
+        .map-container iframe {
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .premium-contact {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+        }
+
+        .contact-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-right: 20px;
+        }
+
+        .premium-contact h4 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .premium-contact p {
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Cross-Navigation Styles */
+        .dir-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+        }
+
+        .dir-card.current-site {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+            color: white !important;
+            border-left: 5px solid var(--accent-color) !important;
+        }
+
+        .dir-card.current-site h3,
+        .dir-card.current-site p {
+            color: white !important;
+        }
+
+        .dir-card.current-site i {
+            color: var(--accent-color) !important;
+        }
+
+        .dir-card.current-site span {
+            background: var(--accent-color) !important;
+            color: var(--secondary-color) !important;
+            position: relative;
+        }
+
+        .dir-card.current-site span::after {
+            content: "Current Page";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--accent-color);
+            color: var(--secondary-color);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-logo h3 {
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: #fbb6ce;
+        }
+
+        .footer-links ul li a:hover {
+            color: white;
+        }
+
+        .footer-disclaimer {
+            flex: 2;
+            min-width: 300px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav {
+                width: 100%;
+                margin-top: 15px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                display: none;
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+                margin-left: 0;
+            }
+            
+            .menu-toggle {
+                display: flex;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .featured-content {
+                flex-direction: column;
+            }
+            
+            .featured-image {
+                order: -1;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+
+            .directories-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filters {
+                flex-direction: column;
+            }
+            
+            .matcher-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .featured-benefits {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <h1>O'Fallon Gyms Directory</h1>
@@ -28,10 +826,10 @@
                 </div>
                 <ul>
                     <li><a href="#hero">Home</a></li>
+                    <li><a href="#matcher">Find Your Match</a></li>
                     <li><a href="#comparison">Quick Compare</a></li>
                     <li><a href="#profiles">Gym Profiles</a></li>
                     <li><a href="#featured">Featured Gym</a></li>
-                    <li><a href="#matcher">Find Your Fit</a></li>
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -39,17 +837,109 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container">
-            <h2>Find Your Perfect Gym in O'Fallon</h2>
-            <p>Compare all gyms in the 62269 area to find your ideal fitness match</p>
+            <h2>Complete O'Fallon Gym Guide - Compare All 14+ Fitness Centers</h2>
+            <p>Find the perfect gym for weight loss, muscle gain, personal training, and more. Compare all fitness centers in O'Fallon, Shiloh, and surrounding areas with ratings, pricing, and amenities.</p>
             <div class="hero-buttons">
                 <a href="#comparison" class="btn btn-primary">Compare All Gyms</a>
-                <a href="#featured" class="btn btn-secondary">See Our Top Pick</a>
+                <a href="#matcher" class="btn btn-secondary">Find My Perfect Match</a>
             </div>
         </div>
     </section>
 
+    <!-- Local Story Section -->
+    <section style="background-color: white; padding: 60px 0;">
+        <div class="container">
+            <h2 style="color: var(--secondary-color); margin-bottom: 30px; text-align: center;">Looking for a Gym in O'Fallon? You're Not Alone.</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 20px;">
+                    With 14+ fitness centers spread across O'Fallon, Shiloh, and the surrounding Metro East areas, choosing the right gym can feel overwhelming.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 20px;">
+                    Maybe you've driven past Club Fitness on Green Mount Crossing wondering about their 24/7 access, or you've heard about StudioStrong.fit's personalized training but aren't sure about their pricing. Perhaps you need specialized CrossFit training from CrossFit Voyage, or you're looking for family-friendly options like the O'Fallon YMCA with their pool and youth programs.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 30px; font-weight: 600;">
+                    That's exactly why we created this complete comparison guide. We've researched every gym, gathered real pricing information, and organized everything so you can find your perfect fitness match without the runaround.
+                </p>
+                
+                <!-- Stats Section -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin: 40px 0; text-align: center;">
+                    <div style="background-color: var(--light-gray); padding: 30px 20px; border-radius: var(--border-radius);">
+                        <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;">14+</h3>
+                        <p style="font-weight: 600; margin: 0;">Gyms Compared</p>
+                    </div>
+                    <div style="background-color: var(--light-gray); padding: 30px 20px; border-radius: var(--border-radius);">
+                        <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;">5min</h3>
+                        <p style="font-weight: 600; margin: 0;">To Find Your Match</p>
+                    </div>
+                    <div style="background-color: var(--light-gray); padding: 30px 20px; border-radius: var(--border-radius);">
+                        <h3 style="font-size: 2rem; color: var(--primary-color); margin-bottom: 10px;">100%</h3>
+                        <p style="font-weight: 600; margin: 0;">Local & Unbiased</p>
+                    </div>
+                </div>
+
+                <!-- Why Compare Section -->
+                <div style="background-color: var(--light-gray); padding: 30px; border-radius: var(--border-radius); margin-top: 40px; text-align: left;">
+                    <h3 style="color: var(--secondary-color); margin-bottom: 20px; text-align: center;">Why Compare Before You Commit?</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 15px;">
+                        Gym memberships in O'Fallon range from $25 basic access at traditional gyms to $250+ premium personal training at boutique studios. But advertised prices rarely tell the whole story. Hidden fees, peak hour crowds, class availability, and trainer quality can turn a "great deal" into a frustrating experience.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.7; margin: 0; font-weight: 600; text-align: center;">
+                        Our side-by-side comparison shows you exactly what to expect at each gym, helping you make an informed decision that saves both time and money.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Matcher Section -->
+    <section id="matcher" class="matcher">
+        <div class="container">
+            <h2>Find Your Fitness Match</h2>
+            <p>Answer a few questions about your fitness goals and preferences to find the perfect gym for you.</p>
+            
+            <div class="matcher-content">
+                <div class="matcher-question active" id="question-1">
+                    <h3>What is your primary fitness goal?</h3>
+                    <div class="matcher-options">
+                        <button class="matcher-option" data-value="weight-loss">Weight Loss</button>
+                        <button class="matcher-option" data-value="muscle-gain">Muscle Gain</button>
+                        <button class="matcher-option" data-value="general-fitness">General Fitness</button>
+                        <button class="matcher-option" data-value="specialized">Specialized Training</button>
+                    </div>
+                </div>
+                
+                <div class="matcher-question" id="question-2">
+                    <h3>What type of workout environment do you prefer?</h3>
+                    <div class="matcher-options">
+                        <button class="matcher-option" data-value="large-gym">Large gym with everything</button>
+                        <button class="matcher-option" data-value="small-studio">Small studio with personal attention</button>
+                        <button class="matcher-option" data-value="group-classes">Group classes with motivated peers</button>
+                        <button class="matcher-option" data-value="private">Private, individual attention</button>
+                    </div>
+                </div>
+                
+                <div class="matcher-question" id="question-3">
+                    <h3>What is your budget for a monthly gym membership?</h3>
+                    <div class="matcher-options">
+                        <button class="matcher-option" data-value="budget">$20-50 per month</button>
+                        <button class="matcher-option" data-value="mid-range">$50-100 per month</button>
+                        <button class="matcher-option" data-value="premium">$100+ per month</button>
+                    </div>
+                </div>
+                
+                <div class="matcher-result" id="matcher-result">
+                    <h3>Your Ideal Gym Match</h3>
+                    <div id="result-content"></div>
+                    <button id="restart-matcher" class="btn btn-secondary">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
     <section id="comparison" class="comparison">
         <div class="container">
             <h2>Gym Comparison Chart</h2>
@@ -78,12 +968,13 @@
                 </div>
                 
                 <div class="filter-group">
-                    <label for="amenity-filter">Key Amenities</label>
+                    <label for="amenity-filter">Key Features</label>
                     <select id="amenity-filter">
-                        <option value="all">All Amenities</option>
+                        <option value="all">All Features</option>
                         <option value="24-7">24/7 Access</option>
                         <option value="classes">Group Classes</option>
                         <option value="training">Personal Training</option>
+                        <option value="recovery">Recovery Services</option>
                     </select>
                 </div>
             </div>
@@ -108,6 +999,7 @@
         </div>
     </section>
 
+    <!-- Profiles Section -->
     <section id="profiles" class="profiles">
         <div class="container">
             <h2>Gym Profiles</h2>
@@ -119,40 +1011,43 @@
         </div>
     </section>
 
+    <!-- Featured Section -->
     <section id="featured" class="featured">
         <div class="container">
             <div class="premium-badge">Preferred</div>
             <h2>Featured Gym: StudioStrong.fit</h2>
-            <p>Our top recommendation for those seeking personalized fitness solutions and exceptional results.</p>
+            <p>Our top recommendation for those seeking personalized fitness solutions and exceptional results in O'Fallon.</p>
             
             <div class="featured-content">
                 <div class="featured-image">
-                    <img src="images/logos/studiostrong.png" alt="StudioStrong.fit logo" class="featured-logo">
+                    <img src="images/logos/studiostrong.png" alt="StudioStrong.fit logo" class="featured-logo" 
+                         onload="console.log('✅ Featured logo loaded successfully')" 
+                         onerror="console.log('⚠️ Featured logo issue, but continuing'); this.style.opacity='0.7';">
                 </div>
                 
                 <div class="featured-info">
                     <h3>Why StudioStrong.fit Stands Out</h3>
-                    <p>StudioStrong.fit offers a premium, personalized fitness experience focused on the whole person - physical, mental, and emotional wellness. In a private setting, clients receive individualized attention and customized programs designed to meet their specific goals.</p>
+                    <p>StudioStrong.fit offers a premium, personalized fitness experience focused on the whole person - physical, mental, and emotional wellness. In a private setting, clients receive individualized attention and customized programs designed to meet their specific goals, making it the premier choice for serious fitness results in O'Fallon.</p>
                     
                     <div class="featured-benefits">
                         <div class="benefit">
                             <h4>Personalized Training</h4>
-                            <p>One-on-one attention from certified trainers</p>
+                            <p>One-on-one attention from certified trainers with customized programs</p>
                         </div>
                         
                         <div class="benefit">
                             <h4>Nutrition Guidance</h4>
-                            <p>Custom meal plans and nutritional support</p>
+                            <p>Custom meal plans and comprehensive nutritional support included</p>
                         </div>
                         
                         <div class="benefit">
                             <h4>Small Group Classes</h4>
-                            <p>Intimate classes with personalized attention</p>
+                            <p>Intimate classes with maximum 4 people for personalized attention</p>
                         </div>
                         
                         <div class="benefit">
                             <h4>Progress Tracking</h4>
-                            <p>Regular assessments and goal setting</p>
+                            <p>Regular assessments, goal setting, and measurable results</p>
                         </div>
                     </div>
                     
@@ -162,216 +1057,19 @@
         </div>
     </section>
 
-    <section id="matcher" class="matcher">
-        <div class="container">
-            <h2>Find Your Fitness Match</h2>
-            <p>Answer a few questions about your fitness goals and preferences to find the perfect gym for you.</p>
-            
-            <div class="matcher-content">
-                <div class="matcher-question active" id="question-1">
-                    <h3>What is your primary fitness goal?</h3>
-                    <div class="matcher-options">
-                        <button class="matcher-option" data-value="weight-loss">Weight Loss</button>
-                        <button class="matcher-option" data-value="muscle-gain">Muscle Gain</button>
-                        <button class="matcher-option" data-value="general-fitness">General Fitness</button>
-                        <button class="matcher-option" data-value="specialized">Specialized Training</button>
-                    </div>
-                </div>
-                
-                <div class="matcher-question" id="question-2">
-                    <h3>What type of workout environment do you prefer?</h3>
-                    <div class="matcher-options">
-                        <button class="matcher-option" data-value="large-gym">I want access to everything under one roof</button>
-                        <button class="matcher-option" data-value="small-studio">I prefer small group settings with personal attention</button>
-                        <button class="matcher-option" data-value="group-classes">I thrive in group settings with motivated peers</button>
-                        <button class="matcher-option" data-value="private">I want private, individual attention</button>
-                    </div>
-                </div>
-                
-                <div class="matcher-question" id="question-3">
-                    <h3>What is your budget for a monthly gym membership?</h3>
-                    <div class="matcher-options">
-                        <button class="matcher-option" data-value="budget">$20-50 per month</button>
-                        <button class="matcher-option" data-value="mid-range">$50-100 per month</button>
-                        <button class="matcher-option" data-value="premium">$100+ per month</button>
-                    </div>
-                </div>
-                
-                <div class="matcher-result" id="matcher-result">
-                    <h3>Your Ideal Gym Match</h3>
-                    <div id="result-content"></div>
-                    <button id="restart-matcher" class="btn btn-secondary">Start Over</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
             <p>Common questions about gyms in the O'Fallon area and how to choose the right one for you.</p>
             
             <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How do I choose the right gym for my fitness goals?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Choosing the right gym depends on your specific fitness goals, preferences, and budget. For weight loss and general fitness, look for gyms with a variety of cardio equipment and group classes. For muscle building, prioritize facilities with extensive free weights and strength equipment. For specialized training like CrossFit or Pilates, seek out boutique studios that focus on those disciplines.</p>
-                        <p>StudioStrong.fit offers personalized assessments to help match your goals with the right training approach, making it an excellent choice for those who want a customized fitness plan.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What's the average cost of gym memberships in O'Fallon?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Gym membership costs in O'Fallon vary widely based on the type of facility and services offered:</p>
-                        <ul>
-                            <li><strong>Budget gyms:</strong> $10-30/month (basic equipment, limited amenities)</li>
-                            <li><strong>Mid-range traditional gyms:</strong> $30-70/month (full equipment, classes included)</li>
-                            <li><strong>Boutique studios:</strong> $70-150/month (specialized training, smaller classes)</li>
-                            <li><strong>Premium personal training:</strong> $150-250/month (individualized attention, customized programs)</li>
-                        </ul>
-                        <p>Many gyms offer different membership tiers and additional services like personal training for an extra fee.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Is personal training worth the extra cost?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Personal training can be a valuable investment, especially for those who:</p>
-                        <ul>
-                            <li>Are new to fitness and need guidance on proper form</li>
-                            <li>Have specific goals like weight loss or athletic performance</li>
-                            <li>Have hit a plateau in their fitness journey</li>
-                            <li>Need accountability and motivation</li>
-                            <li>Have medical conditions or injuries that require specialized attention</li>
-                        </ul>
-                        <p>StudioStrong.fit specializes in personalized training programs that deliver results through individualized attention and customized workout plans, making it an excellent choice for those seeking maximum value from their training investment.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Which gyms in O'Fallon offer 24/7 access?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Several gyms in the O'Fallon area offer 24/7 access for members who need flexible workout times:</p>
-                        <ul>
-                            <li><strong>Anytime Fitness</strong> - Full 24/7 access with key fob entry</li>
-                            <li><strong>Club Fitness</strong> - 24-hour access at most locations</li>
-                            <li><strong>Fitness Zone</strong> - Round-the-clock access for all members</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What's the difference between traditional gyms and boutique studios?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p><strong>Traditional gyms</strong> typically offer:</p>
-                        <ul>
-                            <li>Larger facilities with more equipment variety</li>
-                            <li>Lower monthly costs</li>
-                            <li>More self-directed workout options</li>
-                            <li>Basic amenities like locker rooms and showers</li>
-                            <li>Higher member-to-staff ratios</li>
-                        </ul>
-                        <p><strong>Boutique studios</strong> typically offer:</p>
-                        <ul>
-                            <li>Specialized training in specific disciplines (Pilates, HIIT, etc.)</li>
-                            <li>Smaller class sizes with more personal attention</li>
-                            <li>Higher-end amenities and atmosphere</li>
-                            <li>More structured workout experiences</li>
-                            <li>Community-focused environment</li>
-                        </ul>
-                        <p>StudioStrong.fit combines the best of both worlds with personalized training in a boutique setting while offering comprehensive fitness solutions.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What recovery services are available at O'Fallon gyms?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Recovery services at O'Fallon area gyms include:</p>
-                        <ul>
-                            <li><strong>Stretching areas</strong> - Most gyms have dedicated spaces for stretching and foam rolling</li>
-                            <li><strong>Massage therapy</strong> - Some boutique studios offer massage services</li>
-                            <li><strong>Nutrition counseling</strong> - StudioStrong.fit and several other facilities provide nutritional guidance</li>
-                            <li><strong>Recovery-focused classes</strong> - Yoga and mobility classes are available at several locations</li>
-                        </ul>
-                        <p>Recovery is an essential component of any fitness program, and many O'Fallon gyms are expanding their recovery offerings to help members prevent injury and improve performance.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Which gym is best for beginners in O'Fallon?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>For beginners in O'Fallon, these gyms offer particularly supportive environments:</p>
-                        <ul>
-                            <li><strong>StudioStrong.fit</strong> - Personalized guidance and beginner-friendly approach</li>
-                            <li><strong>YMCA</strong> - Welcoming community atmosphere with introductory programs</li>
-                            <li><strong>Planet Fitness</strong> - Judgment-free zone with simple equipment</li>
-                            <li><strong>O'Fallon Parks & Recreation</strong> - Basic classes designed for all levels</li>
-                        </ul>
-                        <p>Beginners should look for gyms that offer orientation sessions, beginner classes, and staff who are willing to provide guidance on equipment use and proper form.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What specialty fitness options are available in O'Fallon?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>O'Fallon offers several specialty fitness options beyond traditional gyms:</p>
-                        <ul>
-                            <li><strong>CrossFit Voyage</strong> - CrossFit methodology and community</li>
-                            <li><strong>Absolute Flow Pilates</strong> - Reformer Pilates and core training</li>
-                            <li><strong>9Round</strong> - 30-minute kickboxing circuits</li>
-                            <li><strong>OrangeTheory Fitness</strong> - Heart-rate based interval training</li>
-                            <li><strong>F45 Training</strong> - Functional training in a team environment</li>
-                        </ul>
-                        <p>These specialty options provide focused training methodologies that can be particularly effective for specific goals or preferences.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How can I try out gyms before committing?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Most gyms in O'Fallon offer ways to try before you buy:</p>
-                        <ul>
-                            <li><strong>Free day passes</strong> - Available at most traditional gyms</li>
-                            <li><strong>Discounted trial sessions</strong> - Common at boutique studios</li>
-                            <li><strong>Free consultations</strong> - StudioStrong.fit offers fitness assessments</li>
-                            <li><strong>Introductory packages</strong> - Reduced rates for first-time visitors</li>
-                            <li><strong>Guest passes</strong> - Ask friends who are members</li>
-                        </ul>
-                        <p>It's always recommended to visit during the time you plan to typically work out to experience the actual environment and crowd levels you'll encounter regularly.</p>
-                    </div>
-                </div>
+                <!-- FAQ items will be populated by JavaScript -->
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Find Your Gym</h2>
@@ -387,7 +1085,9 @@
                     <p>Visit any of the gyms listed in our directory or contact them directly through their websites for more information about memberships, classes, and special offers.</p>
                     <p>For the premium fitness experience in O'Fallon, we recommend:</p>
                     <div class="premium-contact">
-                        <img src="images/logos/studiostrong.png" alt="StudioStrong.fit logo" class="contact-logo">
+                        <img src="images/logos/studiostrong.png" alt="StudioStrong.fit logo" class="contact-logo" 
+                             onload="console.log('✅ Contact logo loaded successfully')" 
+                             onerror="console.log('⚠️ Contact logo issue, but continuing'); this.style.opacity='0.7';">
                         <div>
                             <h4>StudioStrong.fit</h4>
                             <p>Phone: 618-581-0193</p>
@@ -400,6 +1100,220 @@
         </div>
     </section>
 
+    <!-- CROSS-DIRECTORY NAVIGATION SECTION -->
+    <section id="directories" class="other-directories" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 60px 0; margin-top: 40px;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            
+            <!-- Section Header -->
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: var(--secondary-color); font-size: 2rem; margin-bottom: 15px; font-family: 'Montserrat', sans-serif;">
+                    Other O'Fallon Business Directories
+                </h2>
+                <p style="color: #4a5568; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    Find the best local businesses across all categories in O'Fallon, Illinois
+                </p>
+            </div>
+            
+            <!-- Directories Grid -->
+            <div class="directories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                
+                <!-- Gyms -->
+                <a href="https://ofallongyms.com" class="dir-card gyms" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #e53e3e; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-dumbbell" style="font-size: 2rem; color: #e53e3e; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Gyms & Fitness</h3>
+                        </div>
+                        <span style="background: #e53e3e; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 15+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Fitness centers, personal training, CrossFit, yoga studios, and wellness facilities
+                    </p>
+                </a>
+                
+                <!-- Chiropractors -->
+                <a href="https://ofallonchiropractors.com" class="dir-card chiro" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #2c5aa0; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-user-md" style="font-size: 2rem; color: #2c5aa0; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Chiropractors</h3>
+                        </div>
+                        <span style="background: #2c5aa0; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 15+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Back pain, neck pain, headaches, sports injuries, and wellness chiropractic care
+                    </p>
+                </a>
+                
+                <!-- Dentists -->
+                <a href="https://ofallondentists.com" class="dir-card dental" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #38a169; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-tooth" style="font-size: 2rem; color: #38a169; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Dentists</h3>
+                        </div>
+                        <span style="background: #38a169; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 22+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Family dentistry, orthodontics, oral surgery, cosmetic dentistry, and specialists
+                    </p>
+                </a>
+                
+                <!-- HVAC -->
+                <a href="https://ofallonhvac.com" class="dir-card hvac" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #3182ce; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-wind" style="font-size: 2rem; color: #3182ce; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">HVAC Services</h3>
+                        </div>
+                        <span style="background: #3182ce; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 12+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Heating, cooling, air quality, ductwork, and emergency HVAC repair services
+                    </p>
+                </a>
+                
+                <!-- Auto Repair -->
+                <a href="https://ofalloncarrepair.com" class="dir-card auto" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #d69e2e; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-car" style="font-size: 2rem; color: #d69e2e; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Auto Repair</h3>
+                        </div>
+                        <span style="background: #d69e2e; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 18+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Mechanics, oil changes, brake service, transmission repair, and auto diagnostics
+                    </p>
+                </a>
+                
+                <!-- Real Estate -->
+                <a href="https://ofallonrealtors.com" class="dir-card realestate" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #805ad5; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-home" style="font-size: 2rem; color: #805ad5; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Real Estate</h3>
+                        </div>
+                        <span style="background: #805ad5; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 25+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Buying agents, selling agents, rentals, commercial real estate, and home valuations
+                    </p>
+                </a>
+                
+                <!-- Plumbers -->
+                <a href="https://plumberofallon.com" class="dir-card plumbing" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #2b6cb0; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-wrench" style="font-size: 2rem; color: #2b6cb0; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Plumbers</h3>
+                        </div>
+                        <span style="background: #2b6cb0; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 14+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Emergency plumbing, water heaters, pipe repair, drain cleaning, and installations
+                    </p>
+                </a>
+                
+                <!-- Lawn Services -->
+                <a href="https://ofallonlawnservices.com" class="dir-card lawn" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #68d391; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-leaf" style="font-size: 2rem; color: #68d391; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Lawn Services</h3>
+                        </div>
+                        <span style="background: #68d391; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 16+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Landscaping, lawn care, tree service, snow removal, and outdoor maintenance
+                    </p>
+                </a>
+                
+                <!-- Veterinarians -->
+                <a href="https://ofallonvets.com" class="dir-card vet" 
+                   style="background: white; padding: 25px; border-radius: 10px; text-decoration: none; color: #333; transition: all 0.3s ease; box-shadow: 0 2px 15px rgba(0,0,0,0.1); border-left: 5px solid #f56565; display: block; position: relative;">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                        <div style="display: flex; align-items: center;">
+                            <i class="fas fa-paw" style="font-size: 2rem; color: #f56565; margin-right: 15px; width: 50px; text-align: center;"></i>
+                            <h3 style="margin: 0; font-size: 1.3rem; color: #2c5aa0; font-weight: bold;">Veterinarians</h3>
+                        </div>
+                        <span style="background: #f56565; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">
+                            Compare 12+
+                        </span>
+                    </div>
+                    <p style="margin: 0; font-size: 1rem; color: #666; line-height: 1.5;">
+                        Animal hospitals, emergency vets, pet surgery, vaccinations, and pet care
+                    </p>
+                </a>
+                
+            </div>
+            
+            <!-- Future Expansion Section -->
+            <div style="text-align: center; margin-top: 50px; padding-top: 40px; border-top: 1px solid #e2e8f0;">
+                <h3 style="color: var(--secondary-color); margin-bottom: 20px;">
+                    Directory Network Expansion
+                </h3>
+                <p style="color: #718096; margin-bottom: 30px; font-size: 1.1rem;">
+                    We're building the most comprehensive local business network in the Midwest
+                </p>
+                
+                <!-- Future Cities Grid -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                    
+                    <!-- Edwardsville - Next Target -->
+                    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 2px solid var(--primary-color); position: relative;">
+                        <div style="position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 600;">
+                            Next
+                        </div>
+                        <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: var(--primary-color); margin-bottom: 10px;"></i>
+                        <h4 style="margin: 0 0 5px 0; color: #4a5568;">Edwardsville, IL</h4>
+                        <p style="margin: 0; font-size: 0.9rem; color: #718096;">Coming Q2 2025</p>
+                    </div>
+                    
+                    <!-- St. Charles -->
+                    <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 2px dashed #e2e8f0;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 1.5rem; color: #a0aec0; margin-bottom: 10px;"></i>
+                        <h4 style="margin: 0 0 5px 0; color: #4a5568;">St. Charles, MO</h4>
+                        <p style="margin: 0; font-size: 0.9rem; color: #a0aec0;">Coming Soon</p>
+                    </div>
+                    
+                </div>
+                
+                <!-- Central Hub CTA -->
+                <a href="https://findnear.me/ofallon" 
+                   style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: all 0.3s ease;">
+                    <i class="fas fa-th-large"></i>
+                    Browse All O'Fallon Directories
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -412,6 +1326,7 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#hero">Home</a></li>
+                        <li><a href="#matcher">Find Your Match</a></li>
                         <li><a href="#comparison">Comparison Chart</a></li>
                         <li><a href="#profiles">Gym Profiles</a></li>
                         <li><a href="#featured">Featured Gym</a></li>
@@ -421,7 +1336,7 @@
                 
                 <div class="footer-disclaimer">
                     <h4>Disclaimer</h4>
-                    <p>This directory is for informational purposes only. Information is subject to change. Please contact individual gyms for the most current pricing and offerings.</p>
+                    <p>This directory is for informational purposes only. Information is subject to change. Please contact individual gyms for the most current pricing and offerings. We are not affiliated with any gym listed except our featured partner.</p>
                 </div>
             </div>
             
@@ -431,7 +1346,1331 @@
         </div>
     </footer>
 
-    <script src="gymsData.js"></script>
-    <script src="script.js"></script>
+    <!-- JavaScript for current site highlighting -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentDomain = window.location.hostname;
+            const dirCards = document.querySelectorAll('.dir-card');
+            
+            dirCards.forEach(card => {
+                try {
+                    const cardUrl = new URL(card.href);
+                    if (cardUrl.hostname === currentDomain) {
+                        card.classList.add('current-site');
+                        // Remove the link functionality for current page
+                        card.addEventListener('click', function(e) {
+                            e.preventDefault();
+                        });
+                    }
+                } catch (e) {
+                    // Handle any URL parsing errors
+                    console.log('URL parsing error for card:', card.href);
+                }
+            });
+        });
+    </script>
+
+    <!-- JavaScript -->
+    <script>
+        // Complete Gyms Data for O'Fallon Area (14 gyms)
+        const gymsData = [
+            {
+                id: "studiostrong",
+                name: "StudioStrong.fit",
+                type: "Boutique Studio",
+                price: "$90 to $180+",
+                hours: "Mon-Fri: 5am-8pm, Sat: 7am-12pm, Sun: Closed",
+                features: [
+                    "Certified instructor led classes",
+                    "Personalized training programs",
+                    "Nutrition coaching",
+                    "Small group classes"
+                ],
+                amenities: [
+                    "Private training environment",
+                    "State-of-the-art equipment",
+                    "Nutrition planning",
+                    "Progress tracking",
+                    "Certified trainers"
+                ],
+                rating: 5.0,
+                reviews: 38,
+                website: "https://studiostrong.fit",
+                logo: "images/logos/studiostrong.png",
+                isPremium: true,
+                isPreferred: true
+            },
+            {
+                id: "clubfitness",
+                name: "Club Fitness",
+                type: "Traditional Gym",
+                price: "$25+",
+                hours: "24/7",
+                features: [
+                    "Large facility with extensive equipment",
+                    "Group fitness classes",
+                    "Cardio and strength areas",
+                    "Low monthly cost"
+                ],
+                amenities: [
+                    "24/7 access",
+                    "Free weights",
+                    "Cardio equipment",
+                    "Group classes",
+                    "Locker rooms"
+                ],
+                rating: 4.8,
+                reviews: 1077,
+                website: "https://www.clubfitness.us/location/ofallon/",
+                logo: "images/logos/clubfitness.png",
+                isPremium: false
+            },
+            {
+                id: "ymca",
+                name: "O'Fallon YMCA",
+                type: "Community Center",
+                price: "$40 to $75 (family rates available)",
+                hours: "Mon-Fri: 5am-9pm, Sat: 7am-6pm, Sun: 11am-5pm",
+                features: [
+                    "Family-friendly environment",
+                    "Pool and aquatics programs",
+                    "Youth programs",
+                    "Community focus"
+                ],
+                amenities: [
+                    "Swimming pool",
+                    "Basketball courts",
+                    "Group fitness classes",
+                    "Child care",
+                    "Senior programs"
+                ],
+                rating: 4.6,
+                reviews: 187,
+                website: "https://gwrymca.org/locations/ofallon-illinois-ymca",
+                logo: "images/logos/ymca.png",
+                isPremium: false
+            },
+            {
+                id: "fitnesszone",
+                name: "Fitness Zone",
+                type: "Traditional Gym",
+                price: "$30 to $50",
+                hours: "24/7",
+                features: [
+                    "Spacious workout areas",
+                    "Group fitness classes",
+                    "Personal training available",
+                    "Tanning beds"
+                ],
+                amenities: [
+                    "24/7 access",
+                    "Free weights",
+                    "Cardio equipment",
+                    "Tanning",
+                    "Locker rooms"
+                ],
+                rating: 4.7,
+                reviews: 35,
+                website: "https://ofallonfitnesszone.com/",
+                logo: "images/logos/fitnesszone.png",
+                isPremium: false
+            },
+            {
+                id: "anytimefitness",
+                name: "Anytime Fitness",
+                type: "Traditional Gym",
+                price: "$35 to $50",
+                hours: "24/7",
+                features: [
+                    "24/7 access worldwide",
+                    "Personal training available",
+                    "Clean, well-maintained facility",
+                    "Security features"
+                ],
+                amenities: [
+                    "24/7 access",
+                    "Security access key",
+                    "Free weights",
+                    "Cardio equipment",
+                    "Personal training"
+                ],
+                rating: 4.5,
+                reviews: 53,
+                website: "https://www.anytimefitness.com/gyms/428/shiloh-il-62269/",
+                logo: "images/logos/anytimefitness.png",
+                isPremium: false
+            },
+            {
+                id: "f45",
+                name: "F45 Training",
+                type: "Boutique Studio",
+                price: "$150 to $250",
+                hours: "Class times vary, check schedule",
+                features: [
+                    "45-minute high-intensity workouts",
+                    "Team training environment",
+                    "Functional training focus",
+                    "Daily changing workouts"
+                ],
+                amenities: [
+                    "Functional training equipment",
+                    "Heart rate monitoring",
+                    "Team atmosphere",
+                    "Technology-driven workouts",
+                    "Nutrition guidance"
+                ],
+                rating: 5.0,
+                reviews: 4,
+                website: "https://f45training.com/studio/ofallonil/",
+                logo: "images/logos/f45.svg",
+                isPremium: false
+            },
+            {
+                id: "crossfitvoyage",
+                name: "CrossFit Voyage",
+                type: "CrossFit Box",
+                price: "$150+",
+                hours: "Mon-Fri: 5am-8pm, Sat: 8am-12pm, Sun: Closed",
+                features: [
+                    "CrossFit methodology",
+                    "Coach-led group classes",
+                    "Strength and conditioning focus",
+                    "Community atmosphere"
+                ],
+                amenities: [
+                    "Olympic lifting equipment",
+                    "Gymnastics equipment",
+                    "Open gym times",
+                    "Mobility classes",
+                    "Skilled coaches"
+                ],
+                rating: 4.9,
+                reviews: 39,
+                website: "https://crossfitvoyage.com/",
+                logo: "images/logos/crossfitvoyage.png",
+                isPremium: false
+            },
+            {
+                id: "orangetheory",
+                name: "OrangeTheory Fitness",
+                type: "Boutique Studio",
+                price: "$129 to $179",
+                hours: "Class times vary, check schedule",
+                features: [
+                    "Heart-rate based interval training",
+                    "Coach-led group workouts",
+                    "Technology-tracked progress",
+                    "Science-backed workout method"
+                ],
+                amenities: [
+                    "Heart rate monitors",
+                    "Treadmills",
+                    "Water rowers",
+                    "Weight floor equipment",
+                    "Performance tracking"
+                ],
+                rating: 4.6,
+                reviews: 11,
+                website: "https://www.orangetheory.com/en-us/locations/shiloh-illinois-1470",
+                logo: "images/logos/orangetheory.svg",
+                isPremium: false
+            },
+            {
+                id: "9round",
+                name: "9Round",
+                type: "Boutique Studio",
+                price: "$80 to $110",
+                hours: "Mon-Fri: 6am-8pm, Sat: 8am-12pm, Sun: Closed",
+                features: [
+                    "30-minute kickboxing circuit",
+                    "No class times - start anytime",
+                    "Trainer included",
+                    "New workout daily"
+                ],
+                amenities: [
+                    "Kickboxing equipment",
+                    "Heart rate monitoring",
+                    "Trainer guidance",
+                    "Flexible scheduling",
+                    "Quick workouts"
+                ],
+                rating: 4.9,
+                reviews: 124,
+                website: "https://www.9round.com/locations/il/ofallon/green-mount",
+                logo: "images/logos/9round.png",
+                isPremium: false
+            },
+            {
+                id: "absoluteflow",
+                name: "Absolute Flow Pilates",
+                type: "Boutique Studio",
+                price: "$150 to $290",
+                hours: "Mon-Fri: 7am-7pm, Sat: 8am-12pm, Sun: Closed",
+                features: [
+                    "Reformer Pilates classes",
+                    "Small class sizes",
+                    "Personalized attention",
+                    "Core and flexibility focus"
+                ],
+                amenities: [
+                    "Pilates reformers",
+                    "Small class environment",
+                    "Certified instructors",
+                    "Beginner to advanced options"
+                ],
+                rating: 5.0,
+                reviews: 5,
+                website: "https://www.absoluteflowpilates.com/",
+                logo: "images/logos/absoluteflow.jpg",
+                isPremium: false
+            },
+            {
+                id: "c1fit",
+                name: "C1 Fit",
+                type: "Boutique Studio",
+                price: "$160 to $320",
+                hours: "Mon-Fri: 5am-10pm, Sat-Sun: 7am-7pm",
+                features: [
+                    "Strength and conditioning focus",
+                    "Personal training available",
+                    "Group fitness classes",
+                    "Modern equipment"
+                ],
+                amenities: [
+                    "Free weights",
+                    "Cardio equipment",
+                    "Group fitness studio",
+                    "Personal training",
+                    "Locker rooms"
+                ],
+                rating: 4.9,
+                reviews: 17,
+                website: "https://www.facebook.com/pages/C1-Fit-LLC/341538835985517",
+                logo: "images/logos/c1fit.png",
+                isPremium: false
+            },
+            {
+                id: "ironsharp",
+                name: "Iron Sharp Muscle & Fitness",
+                type: "Boutique Studio",
+                price: "$150 to $300",
+                hours: "Mon-Fri: 6am-9pm, Sat: 7am-5pm, Sun: 8am-2pm",
+                features: [
+                    "Strength training focus",
+                    "Personal training",
+                    "Bodybuilding environment",
+                    "Serious fitness atmosphere"
+                ],
+                amenities: [
+                    "Heavy free weights",
+                    "Specialized strength equipment",
+                    "Personal training",
+                    "Supplement shop",
+                    "Posing room"
+                ],
+                rating: 5.0,
+                reviews: 17,
+                website: "https://www.facebook.com/ironsharpmusclefitness/",
+                logo: "images/logos/ironsharp.jpg",
+                isPremium: false
+            },
+            {
+                id: "ofallonparks",
+                name: "O'Fallon Parks & Recreation",
+                type: "Community Center",
+                price: "$25 to $40 (resident discounts available)",
+                hours: "Mon-Fri: 6am-8pm, Sat: 8am-5pm, Sun: 12pm-5pm",
+                features: [
+                    "Affordable community fitness",
+                    "Various class offerings",
+                    "Family-friendly environment",
+                    "Recreational programs"
+                ],
+                amenities: [
+                    "Fitness equipment",
+                    "Group fitness classes",
+                    "Sports courts",
+                    "Walking track",
+                    "Community events"
+                ],
+                rating: 4.6,
+                reviews: 187,
+                website: "https://ofallonparksandrec.com/",
+                logo: "images/logos/ofallon-parks.png",
+                isPremium: false
+            },
+            {
+                id: "crossfitcheetah",
+                name: "CrossFit Straight Cheetah",
+                type: "CrossFit Box",
+                price: "$150+",
+                hours: "Mon-Fri: 5am-8pm, Sat: 8am-12pm, Sun: Closed",
+                features: [
+                    "CrossFit methodology",
+                    "Coach-led group classes",
+                    "Strength and conditioning focus",
+                    "Community atmosphere"
+                ],
+                amenities: [
+                    "Olympic lifting equipment",
+                    "Gymnastics equipment",
+                    "Open gym times",
+                    "Mobility classes",
+                    "Skilled coaches"
+                ],
+                rating: 4.9,
+                reviews: 25,
+                website: "https://crossfitstraightcheetah.com/",
+                logo: "images/logos/crossfitcheetah.jpg",
+                isPremium: false
+            }
+        ];
+
+        // FAQ Data for Gyms
+        const faqData = [
+            {
+                question: "How do I choose the right gym for my fitness goals?",
+                answer: "Choosing the right gym depends on your specific fitness goals, preferences, and budget. For weight loss and general fitness, look for gyms with a variety of cardio equipment and group classes. For muscle building, prioritize facilities with extensive free weights and strength equipment. For specialized training like CrossFit or Pilates, seek out boutique studios that focus on those disciplines. StudioStrong.fit offers personalized assessments to help match your goals with the right training approach, making it an excellent choice for those who want a customized fitness plan."
+            },
+            {
+                question: "What's the average cost of gym memberships in O'Fallon?",
+                answer: "Gym membership costs in O'Fallon vary widely based on the type of facility and services offered. Budget gyms range from $10-30/month with basic equipment and limited amenities. Mid-range traditional gyms cost $30-70/month with full equipment and classes included. Boutique studios typically range from $70-150/month for specialized training and smaller classes. Premium personal training can cost $150-250/month for individualized attention and customized programs. Many gyms offer different membership tiers and additional services like personal training for an extra fee."
+            },
+            {
+                question: "Is personal training worth the extra cost?",
+                answer: "Personal training can be a valuable investment, especially for those who are new to fitness and need guidance on proper form, have specific goals like weight loss or athletic performance, have hit a plateau in their fitness journey, need accountability and motivation, or have medical conditions or injuries that require specialized attention. StudioStrong.fit specializes in personalized training programs that deliver results through individualized attention and customized workout plans, making it an excellent choice for those seeking maximum value from their training investment."
+            },
+            {
+                question: "Which gyms in O'Fallon offer 24/7 access?",
+                answer: "Several gyms in the O'Fallon area offer 24/7 access for members who need flexible workout times. Anytime Fitness provides full 24/7 access with key fob entry, Club Fitness offers 24-hour access at most locations, and Fitness Zone provides round-the-clock access for all members. These options are perfect for those with irregular schedules, shift workers, or early morning/late night workout preferences."
+            },
+            {
+                question: "What's the difference between traditional gyms and boutique studios?",
+                answer: "Traditional gyms typically offer larger facilities with more equipment variety, lower monthly costs, more self-directed workout options, basic amenities like locker rooms and showers, and higher member-to-staff ratios. Boutique studios typically offer specialized training in specific disciplines (Pilates, HIIT, etc.), smaller class sizes with more personal attention, higher-end amenities and atmosphere, more structured workout experiences, and community-focused environments. StudioStrong.fit combines the best of both worlds with personalized training in a boutique setting while offering comprehensive fitness solutions."
+            },
+            {
+                question: "What recovery services are available at O'Fallon gyms?",
+                answer: "Recovery services at O'Fallon area gyms include stretching areas where most gyms have dedicated spaces for stretching and foam rolling, massage therapy available at some boutique studios, nutrition counseling provided by StudioStrong.fit and several other facilities, and recovery-focused classes like yoga and mobility classes available at several locations. Recovery is an essential component of any fitness program, and many O'Fallon gyms are expanding their recovery offerings to help members prevent injury and improve performance."
+            },
+            {
+                question: "Which gym is best for beginners in O'Fallon?",
+                answer: "For beginners in O'Fallon, these gyms offer particularly supportive environments: StudioStrong.fit provides personalized guidance and beginner-friendly approach, YMCA offers a welcoming community atmosphere with introductory programs, Planet Fitness has a judgment-free zone with simple equipment, and O'Fallon Parks & Recreation provides basic classes designed for all levels. Beginners should look for gyms that offer orientation sessions, beginner classes, and staff who are willing to provide guidance on equipment use and proper form."
+            },
+            {
+                question: "What specialty fitness options are available in O'Fallon?",
+                answer: "O'Fallon offers several specialty fitness options beyond traditional gyms. CrossFit Voyage provides CrossFit methodology and community, Absolute Flow Pilates offers Reformer Pilates and core training, 9Round provides 30-minute kickboxing circuits, OrangeTheory Fitness offers heart-rate based interval training, and F45 Training provides functional training in a team environment. These specialty options provide focused training methodologies that can be particularly effective for specific goals or preferences."
+            },
+            {
+                question: "How can I try out gyms before committing?",
+                answer: "Most gyms in O'Fallon offer ways to try before you buy including free day passes available at most traditional gyms, discounted trial sessions common at boutique studios, free consultations where StudioStrong.fit offers fitness assessments, introductory packages with reduced rates for first-time visitors, and guest passes that you can get from friends who are members. It's always recommended to visit during the time you plan to typically work out to experience the actual environment and crowd levels you'll encounter regularly."
+            },
+            {
+                question: "Which O'Fallon gyms offer group fitness classes?",
+                answer: "Many O'Fallon gyms offer group fitness classes. Club Fitness and the YMCA provide a wide variety of group classes included with membership. Boutique studios like F45 Training, OrangeTheory Fitness, and 9Round specialize in group workout formats. StudioStrong.fit offers small group classes with maximum personal attention (4 people max). CrossFit Voyage and CrossFit Straight Cheetah focus on coach-led group CrossFit classes. Class schedules and offerings vary, so check with individual gyms for current options."
+            },
+            {
+                question: "What should I bring to my first gym visit?",
+                answer: "For your first gym visit, bring comfortable workout clothes appropriate for the type of exercise you plan to do, athletic shoes with good support, a water bottle to stay hydrated, a towel for wiping down equipment, and your ID and payment method if you decide to join. Some gyms provide towels, but it's always good to bring your own. If you're trying a specialty class, ask about any specific requirements or equipment needed."
+            },
+            {
+                question: "How do I know if a gym is right for me?",
+                answer: "To determine if a gym is right for you, consider whether the equipment and facilities match your fitness goals, the hours fit your schedule, the location is convenient for regular visits, the atmosphere and crowd level feel comfortable, the staff is knowledgeable and helpful, the price fits your budget including any hidden fees, and the gym offers the services you need (classes, personal training, etc.). Take advantage of trial periods or day passes to get a feel for the gym during your preferred workout times."
+            }
+        ];
+
+        // SORT FUNCTION FOR MAINTAINING PREMIUM FIRST ORDER
+        function sortGymsForDisplay(gyms) {
+            return [...gyms].sort((a, b) => {
+                // Premium gyms always come first
+                if (a.isPremium && !b.isPremium) return -1;
+                if (!a.isPremium && b.isPremium) return 1;
+                
+                // Then sort by rating (highest first)
+                const ratingA = a.rating || 0;
+                const ratingB = b.rating || 0;
+                
+                if (ratingA !== ratingB) {
+                    return ratingB - ratingA;
+                }
+                
+                // Finally by name alphabetically
+                return a.name.localeCompare(b.name);
+            });
+        }
+
+        // BULLETPROOF INITIALIZATION
+        function initializeSite() {
+            console.log('🚀 Starting gym site initialization...');
+            console.log('📊 Gyms data loaded:', gymsData.length, 'gyms');
+            console.log('❓ FAQ data loaded:', faqData.length, 'questions');
+            
+            // Debug logo paths
+            console.log('🖼️ Logo paths check:');
+            gymsData.forEach(gym => {
+                console.log(`${gym.name}: ${gym.logo}`);
+            });
+            
+            try {
+                initializeNavigation();
+                console.log('✅ Navigation initialized');
+                
+                populateComparisonTable();
+                console.log('✅ Comparison table populated');
+                
+                populateGymProfiles();
+                console.log('✅ Gym profiles populated');
+                
+                setupFilters();
+                console.log('✅ Filters initialized');
+                
+                setupMatcher();
+                console.log('✅ Matcher initialized');
+                
+                populateFAQSection();
+                console.log('✅ FAQ section populated');
+                
+                console.log('🎉 Gym site initialization complete!');
+                
+            } catch (error) {
+                console.error('❌ Error during initialization:', error);
+            }
+        }
+
+        // Multiple initialization triggers
+        document.addEventListener('DOMContentLoaded', initializeSite);
+        
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeSite);
+        } else {
+            initializeSite();
+        }
+        
+        window.addEventListener('load', function() {
+            setTimeout(initializeSite, 100);
+        });
+        
+        setTimeout(function() {
+            if (!document.querySelector('#comparison-table tbody tr')) {
+                console.log('🔄 Fallback initialization triggered');
+                initializeSite();
+            }
+        }, 500);
+
+        // Navigation functionality
+        function initializeNavigation() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('nav ul');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    const spans = menuToggle.querySelectorAll('span');
+                    spans.forEach(span => span.classList.toggle('active'));
+                });
+            }
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                            menuToggle.querySelectorAll('span').forEach(span => span.classList.remove('active'));
+                        }
+                        
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Populate comparison table
+        function populateComparisonTable() {
+            const tableBody = document.querySelector('#comparison-table tbody');
+            if (!tableBody) {
+                console.warn('⚠️ Comparison table tbody not found');
+                return;
+            }
+            
+            tableBody.innerHTML = '';
+            
+            // Use the sort function to ensure premium gyms appear first
+            const sortedGyms = sortGymsForDisplay(gymsData);
+            
+            sortedGyms.forEach(gym => {
+                const row = document.createElement('tr');
+                if (gym.isPremium) {
+                    row.classList.add('premium-row');
+                }
+                
+                // Gym name cell
+                const nameCell = document.createElement('td');
+                nameCell.classList.add('gym-name-cell');
+                
+                const nameWrapper = document.createElement('div');
+                nameWrapper.classList.add('name-wrapper');
+                
+                const logo = document.createElement('img');
+                logo.src = gym.logo;
+                logo.alt = `${gym.name} Logo`;
+                logo.classList.add('gym-logo-small');
+                logo.loading = 'lazy';
+                
+                // Simple logo loading handler (like dentist directory)
+                logo.onload = function() {
+                    console.log(`✅ Logo loaded: ${this.src}`);
+                };
+                
+                logo.onerror = function() {
+                    console.log(`❌ Failed to load logo: ${this.src}`);
+                    // Simple retry once
+                    if (!this.dataset.retried) {
+                        this.dataset.retried = 'true';
+                        setTimeout(() => {
+                            this.src = this.src + '?retry=' + Date.now();
+                        }, 100);
+                        return;
+                    }
+                    this.style.display = 'none';
+                };
+                
+                nameWrapper.appendChild(logo);
+                
+                const nameSpan = document.createElement('span');
+                nameSpan.textContent = gym.name;
+                nameWrapper.appendChild(nameSpan);
+                
+                if (gym.isPremium) {
+                    const badge = document.createElement('span');
+                    badge.classList.add('premium-badge');
+                    badge.textContent = 'Preferred';
+                    badge.style.fontSize = '0.7rem';
+                    badge.style.padding = '2px 8px';
+                    badge.style.marginLeft = '8px';
+                    nameWrapper.appendChild(badge);
+                }
+                
+                nameCell.appendChild(nameWrapper);
+                row.appendChild(nameCell);
+                
+                // Type cell
+                const typeCell = document.createElement('td');
+                typeCell.textContent = gym.type;
+                row.appendChild(typeCell);
+                
+                // Price cell
+                const priceCell = document.createElement('td');
+                priceCell.textContent = gym.price;
+                row.appendChild(priceCell);
+                
+                // Hours cell
+                const hoursCell = document.createElement('td');
+                hoursCell.textContent = gym.hours;
+                row.appendChild(hoursCell);
+                
+                // Features cell
+                const featuresCell = document.createElement('td');
+                const featuresList = document.createElement('ul');
+                featuresList.style.margin = '0';
+                featuresList.style.paddingLeft = '20px';
+                
+                gym.features.forEach(feature => {
+                    const featureItem = document.createElement('li');
+                    featureItem.textContent = feature;
+                    featuresList.appendChild(featureItem);
+                });
+                
+                featuresCell.appendChild(featuresList);
+                row.appendChild(featuresCell);
+                
+                // Rating cell
+                const ratingCell = document.createElement('td');
+                
+                if (gym.rating) {
+                    const ratingDiv = document.createElement('div');
+                    ratingDiv.classList.add('star-rating');
+                    
+                    const fullStars = Math.floor(gym.rating);
+                    const hasHalfStar = gym.rating % 1 >= 0.5;
+                    
+                    for (let i = 0; i < 5; i++) {
+                        const star = document.createElement('i');
+                        
+                        if (i < fullStars) {
+                            star.className = 'fas fa-star';
+                        } else if (i === fullStars && hasHalfStar) {
+                            star.className = 'fas fa-star-half-alt';
+                        } else {
+                            star.className = 'far fa-star';
+                        }
+                        
+                        ratingDiv.appendChild(star);
+                    }
+                    
+                    const ratingText = document.createElement('div');
+                    ratingText.textContent = `${gym.rating} (${gym.reviews} reviews)`;
+                    
+                    ratingCell.appendChild(ratingDiv);
+                    ratingCell.appendChild(ratingText);
+                } else {
+                    ratingCell.textContent = 'No rating';
+                }
+                
+                row.appendChild(ratingCell);
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Populate gym profiles
+        function populateGymProfiles() {
+            const profilesContainer = document.getElementById('gym-profiles');
+            if (!profilesContainer) {
+                console.warn('⚠️ Gym profiles container not found');
+                return;
+            }
+            
+            profilesContainer.innerHTML = '';
+            
+            // Use the sort function to ensure premium gyms appear first
+            const sortedGyms = sortGymsForDisplay(gymsData);
+            
+            sortedGyms.forEach(gym => {
+                const profileCard = document.createElement('div');
+                profileCard.className = 'profile-card';
+                if (gym.isPremium) {
+                    profileCard.classList.add('premium-card');
+                }
+                
+                // Profile header
+                const profileHeader = document.createElement('div');
+                profileHeader.className = 'profile-header';
+                
+                const logoImg = document.createElement('img');
+                logoImg.src = gym.logo;
+                logoImg.alt = `${gym.name} logo`;
+                logoImg.className = 'profile-logo';
+                
+                // Simple loading handler for profile logos
+                logoImg.onload = function() {
+                    console.log(`✅ Profile logo loaded: ${this.src}`);
+                };
+                
+                logoImg.onerror = function() {
+                    console.log(`❌ Failed to load profile logo: ${this.src}`);
+                    // Simple retry
+                    if (!this.dataset.retried) {
+                        this.dataset.retried = 'true';
+                        setTimeout(() => {
+                            this.src = this.src + '?retry=' + Date.now();
+                        }, 100);
+                        return;
+                    }
+                    this.style.display = 'none';
+                };
+                
+                const profileTitle = document.createElement('div');
+                profileTitle.className = 'profile-title';
+                
+                const nameHeading = document.createElement('h3');
+                nameHeading.textContent = gym.name;
+                if (gym.isPremium) {
+                    const premiumBadge = document.createElement('span');
+                    premiumBadge.className = 'premium-badge';
+                    premiumBadge.textContent = 'Preferred';
+                    premiumBadge.style.fontSize = '0.7rem';
+                    premiumBadge.style.padding = '2px 8px';
+                    premiumBadge.style.marginLeft = '8px';
+                    nameHeading.appendChild(premiumBadge);
+                }
+                
+                const typeText = document.createElement('div');
+                typeText.className = 'profile-type';
+                typeText.textContent = gym.type;
+                
+                profileTitle.appendChild(nameHeading);
+                profileTitle.appendChild(typeText);
+                
+                profileHeader.appendChild(logoImg);
+                profileHeader.appendChild(profileTitle);
+                
+                // Profile body
+                const profileBody = document.createElement('div');
+                profileBody.className = 'profile-body';
+                
+                // Price info
+                const priceInfo = document.createElement('div');
+                priceInfo.className = 'profile-info';
+                
+                const priceHeading = document.createElement('h4');
+                priceHeading.textContent = 'Monthly Price';
+                
+                const priceText = document.createElement('p');
+                priceText.textContent = gym.price;
+                
+                priceInfo.appendChild(priceHeading);
+                priceInfo.appendChild(priceText);
+                
+                // Hours info
+                const hoursInfo = document.createElement('div');
+                hoursInfo.className = 'profile-info';
+                
+                const hoursHeading = document.createElement('h4');
+                hoursHeading.textContent = 'Hours';
+                
+                const hoursText = document.createElement('p');
+                hoursText.textContent = gym.hours;
+                
+                hoursInfo.appendChild(hoursHeading);
+                hoursInfo.appendChild(hoursText);
+                
+                // Features info
+                const featuresInfo = document.createElement('div');
+                featuresInfo.className = 'profile-info';
+                
+                const featuresHeading = document.createElement('h4');
+                featuresHeading.textContent = 'Key Features';
+                
+                const featuresList = document.createElement('ul');
+                
+                gym.features.forEach(feature => {
+                    const featureItem = document.createElement('li');
+                    featureItem.textContent = feature;
+                    featuresList.appendChild(featureItem);
+                });
+                
+                featuresInfo.appendChild(featuresHeading);
+                featuresInfo.appendChild(featuresList);
+                
+                // Amenities info
+                const amenitiesInfo = document.createElement('div');
+                amenitiesInfo.className = 'profile-info';
+                
+                const amenitiesHeading = document.createElement('h4');
+                amenitiesHeading.textContent = 'Amenities';
+                
+                const amenitiesList = document.createElement('ul');
+                
+                gym.amenities.forEach(amenity => {
+                    const amenityItem = document.createElement('li');
+                    amenityItem.textContent = amenity;
+                    amenitiesList.appendChild(amenityItem);
+                });
+                
+                amenitiesInfo.appendChild(amenitiesHeading);
+                amenitiesInfo.appendChild(amenitiesList);
+                
+                profileBody.appendChild(priceInfo);
+                profileBody.appendChild(hoursInfo);
+                profileBody.appendChild(featuresInfo);
+                profileBody.appendChild(amenitiesInfo);
+                
+                // Profile footer - FIXED: Always at bottom using CSS
+                const profileFooter = document.createElement('div');
+                profileFooter.className = 'profile-footer';
+                
+                const ratingDiv = document.createElement('div');
+                ratingDiv.className = 'profile-rating';
+                
+                if (gym.rating) {
+                    const ratingStars = document.createElement('div');
+                    ratingStars.className = 'star-rating';
+                    
+                    const fullStars = Math.floor(gym.rating);
+                    const hasHalfStar = gym.rating % 1 >= 0.5;
+                    
+                    for (let i = 0; i < fullStars; i++) {
+                        ratingStars.innerHTML += '★';
+                    }
+                    
+                    if (hasHalfStar) {
+                        ratingStars.innerHTML += '½';
+                    }
+                    
+                    const ratingText = document.createElement('span');
+                    ratingText.textContent = `${gym.rating} (${gym.reviews} reviews)`;
+                    
+                    ratingDiv.appendChild(ratingStars);
+                    ratingDiv.appendChild(ratingText);
+                } else {
+                    ratingDiv.textContent = 'No rating';
+                }
+                
+                const linkDiv = document.createElement('div');
+                linkDiv.className = 'profile-link';
+                
+                const websiteLink = document.createElement('a');
+                websiteLink.href = gym.website;
+                websiteLink.target = '_blank';
+                websiteLink.textContent = 'Visit Website';
+                
+                linkDiv.appendChild(websiteLink);
+                
+                profileFooter.appendChild(ratingDiv);
+                profileFooter.appendChild(linkDiv);
+                
+                // Assemble profile card
+                profileCard.appendChild(profileHeader);
+                profileCard.appendChild(profileBody);
+                profileCard.appendChild(profileFooter);
+                
+                profilesContainer.appendChild(profileCard);
+            });
+        }
+
+        // Setup filter functionality
+        function setupFilters() {
+            const typeFilter = document.getElementById('type-filter');
+            const priceFilter = document.getElementById('price-filter');
+            const amenityFilter = document.getElementById('amenity-filter');
+            
+            if (!typeFilter || !priceFilter || !amenityFilter) {
+                console.warn('⚠️ Filter elements not found');
+                return;
+            }
+            
+            const applyFilters = () => {
+                const typeValue = typeFilter.value;
+                const priceValue = priceFilter.value;
+                const amenityValue = amenityFilter.value;
+                
+                console.log('🔍 Applying filters:', { typeValue, priceValue, amenityValue });
+                
+                const filteredGyms = gymsData.filter(gym => {
+                    // Type filter
+                    if (typeValue !== 'all') {
+                        const typeMatch = typeValue === 'traditional' && gym.type.toLowerCase().includes('traditional') ||
+                                         typeValue === 'boutique' && gym.type.toLowerCase().includes('boutique') ||
+                                         typeValue === 'community' && gym.type.toLowerCase().includes('community') ||
+                                         typeValue === 'crossfit' && gym.type.toLowerCase().includes('crossfit');
+                        if (!typeMatch) return false;
+                    }
+                    
+                    // Price filter
+                    if (priceValue !== 'all') {
+                        const priceText = gym.price.toLowerCase();
+                        const firstNumber = parseInt(priceText.match(/\d+/)[0]);
+                        
+                        if (priceValue === 'budget' && firstNumber > 50) return false;
+                        if (priceValue === 'mid' && (firstNumber < 50 || firstNumber > 100)) return false;
+                        if (priceValue === 'premium' && firstNumber < 100) return false;
+                    }
+                    
+                    // Amenity filter
+                    if (amenityValue !== 'all') {
+                        const amenities = gym.amenities.map(a => a.toLowerCase()).join(' ');
+                        const features = gym.features.map(f => f.toLowerCase()).join(' ');
+                        const allText = amenities + ' ' + features;
+                        
+                        if (amenityValue === '24-7' && !allText.includes('24/7')) return false;
+                        if (amenityValue === 'classes' && !allText.includes('class')) return false;
+                        if (amenityValue === 'training' && !allText.includes('training')) return false;
+                        if (amenityValue === 'recovery' && !allText.includes('recovery') && !allText.includes('massage') && !allText.includes('sauna')) return false;
+                    }
+                    
+                    return true;
+                });
+                
+                console.log('✅ Filtered results:', filteredGyms.length, 'gyms');
+                
+                // Update the table with filtered data
+                updateTableWithFilteredData(filteredGyms);
+            };
+            
+            typeFilter.addEventListener('change', applyFilters);
+            priceFilter.addEventListener('change', applyFilters);
+            amenityFilter.addEventListener('change', applyFilters);
+        }
+
+        // FIXED: Update table with filtered data - now includes proper sorting
+        function updateTableWithFilteredData(filteredGyms) {
+            const tableBody = document.querySelector('#comparison-table tbody');
+            tableBody.innerHTML = '';
+            
+            // ✅ FIX: Apply same sorting to filtered results to ensure premium stays on top
+            const sortedFilteredGyms = sortGymsForDisplay(filteredGyms);
+            
+            console.log('🔄 Updating table with sorted filtered gyms:', sortedFilteredGyms.length);
+            
+            sortedFilteredGyms.forEach(gym => {
+                const row = document.createElement('tr');
+                if (gym.isPremium) {
+                    row.classList.add('premium-row');
+                    console.log('⭐ Premium gym in filtered results:', gym.name);
+                }
+                
+                // Create cells similar to populateComparisonTable
+                const nameCell = document.createElement('td');
+                nameCell.classList.add('gym-name-cell');
+                
+                const nameWrapper = document.createElement('div');
+                nameWrapper.classList.add('name-wrapper');
+                
+                const logo = document.createElement('img');
+                logo.src = gym.logo;
+                logo.alt = `${gym.name} Logo`;
+                logo.classList.add('gym-logo-small');
+                logo.loading = 'lazy';
+                
+                // Simple logo loading handler (matching dentist directory approach)
+                logo.onload = function() {
+                    console.log(`✅ Filtered logo loaded: ${this.src}`);
+                };
+                
+                logo.onerror = function() {
+                    console.log(`❌ Failed to load filtered logo: ${this.src}`);
+                    // Simple retry once
+                    if (!this.dataset.retried) {
+                        this.dataset.retried = 'true';
+                        setTimeout(() => {
+                            this.src = this.src + '?retry=' + Date.now();
+                        }, 100);
+                        return;
+                    }
+                    this.style.display = 'none';
+                };
+                
+                nameWrapper.appendChild(logo);
+                
+                const nameSpan = document.createElement('span');
+                nameSpan.textContent = gym.name;
+                nameWrapper.appendChild(nameSpan);
+                
+                if (gym.isPremium) {
+                    const badge = document.createElement('span');
+                    badge.classList.add('premium-badge');
+                    badge.textContent = 'Preferred';
+                    badge.style.fontSize = '0.7rem';
+                    badge.style.padding = '2px 8px';
+                    badge.style.marginLeft = '8px';
+                    nameWrapper.appendChild(badge);
+                }
+                
+                nameCell.appendChild(nameWrapper);
+                row.appendChild(nameCell);
+                
+                // Add other cells
+                const typeCell = document.createElement('td');
+                typeCell.textContent = gym.type;
+                row.appendChild(typeCell);
+                
+                const priceCell = document.createElement('td');
+                priceCell.textContent = gym.price;
+                row.appendChild(priceCell);
+                
+                const hoursCell = document.createElement('td');
+                hoursCell.textContent = gym.hours;
+                row.appendChild(hoursCell);
+                
+                const featuresCell = document.createElement('td');
+                const featuresList = document.createElement('ul');
+                featuresList.style.margin = '0';
+                featuresList.style.paddingLeft = '20px';
+                
+                gym.features.forEach(feature => {
+                    const featureItem = document.createElement('li');
+                    featureItem.textContent = feature;
+                    featuresList.appendChild(featureItem);
+                });
+                
+                featuresCell.appendChild(featuresList);
+                row.appendChild(featuresCell);
+                
+                const ratingCell = document.createElement('td');
+                if (gym.rating) {
+                    const ratingText = `${gym.rating} (${gym.reviews} reviews)`;
+                    ratingCell.textContent = ratingText;
+                } else {
+                    ratingCell.textContent = 'No rating';
+                }
+                row.appendChild(ratingCell);
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Setup matcher functionality
+        function setupMatcher() {
+            const questions = document.querySelectorAll('.matcher-question');
+            const result = document.getElementById('matcher-result');
+            const resultContent = document.getElementById('result-content');
+            const restartButton = document.getElementById('restart-matcher');
+            
+            if (!questions.length || !result || !resultContent || !restartButton) {
+                console.warn('⚠️ Matcher elements not found');
+                return;
+            }
+            
+            let currentQuestion = 0;
+            const answers = {};
+            
+            questions.forEach((question, index) => {
+                const options = question.querySelectorAll('.matcher-option');
+                
+                options.forEach(option => {
+                    option.addEventListener('click', () => {
+                        answers[`question${index + 1}`] = option.getAttribute('data-value');
+                        
+                        question.classList.remove('active');
+                        
+                        if (index < questions.length - 1) {
+                            questions[index + 1].classList.add('active');
+                            currentQuestion = index + 1;
+                        } else {
+                            showMatcherResult();
+                            result.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            restartButton.addEventListener('click', () => {
+                for (let key in answers) {
+                    delete answers[key];
+                }
+                
+                result.classList.remove('active');
+                
+                questions.forEach(q => q.classList.remove('active'));
+                questions[0].classList.add('active');
+                currentQuestion = 0;
+            });
+            
+            function showMatcherResult() {
+                let bestMatch;
+                
+                // Enhanced matching algorithm based on answers
+                if (answers.question1 === 'weight-loss') {
+                    if (answers.question2 === 'small-studio') {
+                        if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                        } else if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'f45');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === '9round');
+                        }
+                    } else if (answers.question2 === 'private') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'absoluteflow');
+                        }
+                    } else if (answers.question2 === 'group-classes') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'orangetheory');
+                        } else if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === '9round');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'clubfitness');
+                        }
+                    } else {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'f45');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'clubfitness');
+                        }
+                    }
+                } else if (answers.question1 === 'muscle-gain') {
+                    if (answers.question2 === 'small-studio') {
+                        if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                        } else if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'ironsharp');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'fitnesszone');
+                        }
+                    } else if (answers.question2 === 'private') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'ironsharp');
+                        }
+                    } else if (answers.question2 === 'group-classes') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'ironsharp');
+                        } else if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === 'ymca');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'clubfitness');
+                        }
+                    } else {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'c1fit');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'anytimefitness');
+                        }
+                    }
+                } else if (answers.question1 === 'specialized') {
+                    if (answers.question2 === 'private') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'absoluteflow');
+                        }
+                    } else if (answers.question2 === 'small-studio') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'absoluteflow');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === '9round');
+                        }
+                    } else if (answers.question2 === 'group-classes') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'crossfitvoyage');
+                        } else if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === 'crossfitcheetah');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === '9round');
+                        }
+                    } else {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'f45');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'clubfitness');
+                        }
+                    }
+                } else {
+                    // General fitness
+                    if (answers.question2 === 'group-classes') {
+                        if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                        } else if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'f45');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'ymca');
+                        }
+                    } else if (answers.question2 === 'private') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'absoluteflow');
+                        }
+                    } else if (answers.question2 === 'small-studio') {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'c1fit');
+                        } else if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === '9round');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'fitnesszone');
+                        }
+                    } else {
+                        if (answers.question3 === 'premium') {
+                            bestMatch = gymsData.find(gym => gym.id === 'c1fit');
+                        } else if (answers.question3 === 'mid-range') {
+                            bestMatch = gymsData.find(gym => gym.id === 'ymca');
+                        } else {
+                            bestMatch = gymsData.find(gym => gym.id === 'clubfitness');
+                        }
+                    }
+                }
+                
+                // Default to StudioStrong if no match found
+                if (!bestMatch) {
+                    bestMatch = gymsData.find(gym => gym.id === 'studiostrong');
+                }
+                
+                // Create result content
+                resultContent.innerHTML = '';
+                
+                const resultCard = document.createElement('div');
+                resultCard.className = 'profile-card';
+                if (bestMatch.isPremium) {
+                    resultCard.classList.add('premium-card');
+                }
+                
+                resultCard.innerHTML = `
+                    <div class="profile-header">
+                        <img src="${bestMatch.logo}" alt="${bestMatch.name} logo" class="profile-logo">
+                        <div class="profile-title">
+                            <h3>${bestMatch.name}${bestMatch.isPremium ? '<span class="premium-badge" style="font-size: 0.7rem; padding: 2px 8px; margin-left: 8px;">Preferred</span>' : ''}</h3>
+                            <div class="profile-type">${bestMatch.type}</div>
+                        </div>
+                    </div>
+                    <div class="profile-body">
+                        <p>Based on your preferences, <strong>${bestMatch.name}</strong> is your ideal gym match!</p>
+                        <div class="profile-info">
+                            <h4>Why this match:</h4>
+                            <ul>
+                                ${bestMatch.features.map(feature => `<li>${feature}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="profile-info">
+                            <h4>Monthly Price:</h4>
+                            <p>${bestMatch.price}</p>
+                        </div>
+                        <div class="profile-info">
+                            <h4>Hours:</h4>
+                            <p>${bestMatch.hours}</p>
+                        </div>
+                        <a href="${bestMatch.website}" target="_blank" class="btn btn-primary" style="margin-top: 20px; display: inline-block;">Visit ${bestMatch.name}</a>
+                    </div>
+                `;
+                
+                resultContent.appendChild(resultCard);
+            }
+        }
+
+        // Populate FAQ section
+        function populateFAQSection() {
+            const faqList = document.querySelector('.faq-list');
+            if (!faqList || !faqData) {
+                console.warn('⚠️ FAQ container not found');
+                return;
+            }
+            
+            faqList.innerHTML = '';
+            
+            faqData.forEach((faq, index) => {
+                const faqItem = document.createElement('div');
+                faqItem.classList.add('faq-item');
+                
+                const faqQuestion = document.createElement('div');
+                faqQuestion.classList.add('faq-question');
+                
+                const faqQuestionText = document.createElement('h3');
+                faqQuestionText.textContent = faq.question;
+                faqQuestion.appendChild(faqQuestionText);
+                
+                const faqToggle = document.createElement('span');
+                faqToggle.classList.add('faq-toggle');
+                faqToggle.textContent = '+';
+                faqQuestion.appendChild(faqToggle);
+                
+                faqItem.appendChild(faqQuestion);
+                
+                const faqAnswer = document.createElement('div');
+                faqAnswer.classList.add('faq-answer');
+                
+                const faqAnswerContent = document.createElement('p');
+                faqAnswerContent.textContent = faq.answer;
+                faqAnswer.appendChild(faqAnswerContent);
+                
+                faqItem.appendChild(faqAnswer);
+                
+                // Add click event
+                faqQuestion.addEventListener('click', function() {
+                    // Close other items
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (item !== faqItem && item.classList.contains('active')) {
+                            item.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    faqItem.classList.toggle('active');
+                });
+                
+                faqList.appendChild(faqItem);
+            });
+            
+            console.log('✅ FAQ section populated with', faqData.length, 'questions');
+        }
+    </script>
 </body>
 </html>
